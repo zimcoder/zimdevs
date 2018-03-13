@@ -1,4 +1,5 @@
 import { Gender } from "./Gender";
+import { WorkExperience } from "./workExperience";
 
 export class Developer{
     
@@ -7,6 +8,9 @@ export class Developer{
     emailAddress:string;
     dateOfBirth:Date;
     registrationDate:Date;
-    gender:Gender
+    gender:Gender;
+    isActive:boolean;
+    isLoggedIn:boolean;
+    workHistory:WorkExperience[]
 
 }
