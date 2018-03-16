@@ -18,6 +18,7 @@ import { DeveloperComponent } from './components/developer/developer.component';
 import { UsertableComponent } from './components/usertable/usertable.component';
 
 import { UserService } from './services/user.service';
+import { PageNotFoundComponent } from './components/page-not-found/page-not-found.component';
 
 
 
@@ -28,7 +29,8 @@ import { UserService } from './services/user.service';
     NavbarComponent,
     LoginComponent,
     DeveloperComponent,
-    UsertableComponent
+    UsertableComponent,
+    PageNotFoundComponent
   ],
   imports: [
     BrowserModule,
