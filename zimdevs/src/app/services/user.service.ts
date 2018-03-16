@@ -1,11 +1,12 @@
-import { Injectable } from '@angular/core';
+import { Injectable }   from '@angular/core';
+import { HttpClient }   from '@angular/common/http';
 import { Observable }   from 'rxjs/Observable';
 import 'rxjs/add/operator/map';
-import { HttpClient } from '@angular/common/http';
+
 import { User } from '../models/User';
 
 @Injectable()
-export class DeveloperService {
+export class UserService {
 
   private serviceUrl = 'https://jsonplaceholder.typicode.com/users';
   

@@ -1,15 +1,24 @@
+//Angular Modules
 import { BrowserModule } from '@angular/platform-browser';
-import { MatToolbarModule, MatButtonModule} from '@angular/material';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { MatToolbarModule, MatButtonModule, MatTableModule } from '@angular/material';
 import { NgModule, NO_ERRORS_SCHEMA } from '@angular/core';
-import { MDBBootstrapModule } from 'angular-bootstrap-md';
+import { HttpClientModule } from '@angular/common/http';
 
+//Custom Modules
+import { MDBBootstrapModule } from 'angular-bootstrap-md';
 import { AppRoutingModule } from './app-routing.module';
 
+//Components
 import { AppComponent } from './app.component';
-import { HomeComponent } from './home/home.component';
-import { NavbarComponent } from './navbar/navbar.component';
-import { LoginComponent } from './login/login.component';
-import { DeveloperComponent } from './developer/developer.component';
+import { HomeComponent } from './components/home/home.component';
+import { NavbarComponent } from './components/navbar/navbar.component';
+import { LoginComponent } from './components/login/login.component';
+import { DeveloperComponent } from './components/developer/developer.component';
+import { UsertableComponent } from './components/usertable/usertable.component';
+
+import { UserService } from './services/user.service';
+
 
 
 @NgModule({
@@ -18,17 +27,23 @@ import { DeveloperComponent } from './developer/developer.component';
     HomeComponent,
     NavbarComponent,
     LoginComponent,
-    DeveloperComponent
+    DeveloperComponent,
+    UsertableComponent
   ],
   imports: [
     BrowserModule,
+    BrowserAnimationsModule,
+    HttpClientModule,
+    AppRoutingModule,
+    
     MatToolbarModule,
     MatButtonModule,
-    AppRoutingModule,
+    MatTableModule,
+    
     MDBBootstrapModule.forRoot()
   ],
-  schemas:[NO_ERRORS_SCHEMA],
-  providers: [],
+  schemas: [NO_ERRORS_SCHEMA],
+  providers: [UserService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
