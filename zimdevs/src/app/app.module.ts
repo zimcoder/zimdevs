@@ -19,6 +19,8 @@ import { UsertableComponent } from './components/usertable/usertable.component';
 
 import { UserService } from './services/user.service';
 import { PageNotFoundComponent } from './components/page-not-found/page-not-found.component';
+import { BlogComponent } from './components/blog/blog.component';
+import { JobComponent } from './components/job/job.component';
 
 
 
@@ -30,7 +32,9 @@ import { PageNotFoundComponent } from './components/page-not-found/page-not-foun
     LoginComponent,
     DeveloperComponent,
     UsertableComponent,
-    PageNotFoundComponent
+    PageNotFoundComponent,
+    BlogComponent,
+    JobComponent
   ],
   imports: [
     BrowserModule,
