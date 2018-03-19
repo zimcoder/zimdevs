@@ -3,8 +3,8 @@ import { WorkExperience } from "./workExperience";
 
 export class Developer{
     
-    firstname:string;
-    lastname:string;
+    firstName:string;
+    lastName:string;
     emailAddress:string;
     dateOfBirth:Date;
     registrationDate:Date;

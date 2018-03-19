@@ -1,3 +1,4 @@
-<p>
-  developer works!
-</p>
+<ul *ngFor="let developer of devs | async">
+  <li>{{developer.firstName}}</li>
+  <br> {{developer.lastName}}
+</ul>
