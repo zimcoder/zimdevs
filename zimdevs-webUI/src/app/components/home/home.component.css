@@ -1,3 +1,16 @@
-.welcomeBanner {
-  height: 300px
+.top-banner {
+  margin-top: 0px;
+  background-image: url('/assets/images/Harare-featured-image.jpg');
+  background-color: blueviolet;
+  height: 400px;
+  padding: 2em
+}
+
+.main-intro-banner {
+  margin: 20px;
+  display: flex;
+}
+
+.intro-text{
+  color: white;
 }
