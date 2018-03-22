@@ -8,3 +8,13 @@ F:\smartprojects\zimdevs\zimdevsapi\obj\Debug\netcoreapp2.0\zimdevsapi.AssemblyI
 F:\smartprojects\zimdevs\zimdevsapi\obj\Debug\netcoreapp2.0\zimdevsapi.AssemblyInfo.cs
 F:\smartprojects\zimdevs\zimdevsapi\obj\Debug\netcoreapp2.0\zimdevsapi.dll
 F:\smartprojects\zimdevs\zimdevsapi\obj\Debug\netcoreapp2.0\zimdevsapi.pdb
+F:\smartprojects\zimdevs\zimdevs-API\bin\Debug\netcoreapp2.0\zimdevsapi.deps.json
+F:\smartprojects\zimdevs\zimdevs-API\bin\Debug\netcoreapp2.0\zimdevsapi.runtimeconfig.json
+F:\smartprojects\zimdevs\zimdevs-API\bin\Debug\netcoreapp2.0\zimdevsapi.runtimeconfig.dev.json
+F:\smartprojects\zimdevs\zimdevs-API\bin\Debug\netcoreapp2.0\zimdevsapi.dll
+F:\smartprojects\zimdevs\zimdevs-API\bin\Debug\netcoreapp2.0\zimdevsapi.pdb
+F:\smartprojects\zimdevs\zimdevs-API\obj\Debug\netcoreapp2.0\zimdevsapi.csproj.CoreCompileInputs.cache
+F:\smartprojects\zimdevs\zimdevs-API\obj\Debug\netcoreapp2.0\zimdevsapi.AssemblyInfoInputs.cache
+F:\smartprojects\zimdevs\zimdevs-API\obj\Debug\netcoreapp2.0\zimdevsapi.AssemblyInfo.cs
+F:\smartprojects\zimdevs\zimdevs-API\obj\Debug\netcoreapp2.0\zimdevsapi.dll
+F:\smartprojects\zimdevs\zimdevs-API\obj\Debug\netcoreapp2.0\zimdevsapi.pdb

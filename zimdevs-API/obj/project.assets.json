@@ -12541,11 +12541,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "F:\\smartprojects\\zimdevs\\zimdevsapi\\zimdevsapi.csproj",
+      "projectUniqueName": "F:\\smartprojects\\zimdevs\\zimdevs-API\\zimdevsapi.csproj",
       "projectName": "zimdevsapi",
-      "projectPath": "F:\\smartprojects\\zimdevs\\zimdevsapi\\zimdevsapi.csproj",
+      "projectPath": "F:\\smartprojects\\zimdevs\\zimdevs-API\\zimdevsapi.csproj",
       "packagesPath": "C:\\Users\\clsiby\\.nuget\\packages\\",
-      "outputPath": "F:\\smartprojects\\zimdevs\\zimdevsapi\\obj\\",
+      "outputPath": "F:\\smartprojects\\zimdevs\\zimdevs-API\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
