@@ -1,7 +1,7 @@
 .top-banner {
   margin-top: 0px;
-  background-image: url('/assets/images/Harare-featured-image.jpg');
-  background-color: blueviolet;
+  /* background-image: url('/assets/images/Harare-featured-image.jpg'); */
+  background-color:blueviolet;
   height: 400px;
   padding: 2em
 }
@@ -12,5 +12,11 @@
 }
 
 .intro-text{
+  color: white;
+}
+
+.info-strip{
+  height: 80px;
+  background-color:purple;
   color: white;
 }
