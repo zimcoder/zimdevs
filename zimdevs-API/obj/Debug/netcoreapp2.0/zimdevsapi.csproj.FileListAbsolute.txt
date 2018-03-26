@@ -23,9 +23,9 @@ C:\Users\ClSiby\SmartProjects\zimdevs\zimdevs-API\bin\Debug\netcoreapp2.0\zimdev
 C:\Users\ClSiby\SmartProjects\zimdevs\zimdevs-API\bin\Debug\netcoreapp2.0\zimdevsapi.runtimeconfig.dev.json
 C:\Users\ClSiby\SmartProjects\zimdevs\zimdevs-API\bin\Debug\netcoreapp2.0\zimdevsapi.dll
 C:\Users\ClSiby\SmartProjects\zimdevs\zimdevs-API\bin\Debug\netcoreapp2.0\zimdevsapi.pdb
-C:\Users\ClSiby\SmartProjects\zimdevs\zimdevs-API\obj\Debug\netcoreapp2.0\zimdevsapi.csprojResolveAssemblyReference.cache
 C:\Users\ClSiby\SmartProjects\zimdevs\zimdevs-API\obj\Debug\netcoreapp2.0\zimdevsapi.csproj.CoreCompileInputs.cache
 C:\Users\ClSiby\SmartProjects\zimdevs\zimdevs-API\obj\Debug\netcoreapp2.0\zimdevsapi.AssemblyInfoInputs.cache
 C:\Users\ClSiby\SmartProjects\zimdevs\zimdevs-API\obj\Debug\netcoreapp2.0\zimdevsapi.AssemblyInfo.cs
 C:\Users\ClSiby\SmartProjects\zimdevs\zimdevs-API\obj\Debug\netcoreapp2.0\zimdevsapi.dll
 C:\Users\ClSiby\SmartProjects\zimdevs\zimdevs-API\obj\Debug\netcoreapp2.0\zimdevsapi.pdb
+C:\Users\ClSiby\SmartProjects\zimdevs\zimdevs-API\obj\Debug\netcoreapp2.0\zimdevsapi.csprojResolveAssemblyReference.cache
