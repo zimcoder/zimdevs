@@ -45,7 +45,7 @@
         <input class="form-control mr-sm-2" type="text" placeholder="Search">
       </form> -->
     
-        <div style="margin-left:auto; margin-right:0">
+        <div style="margin-left:auto; margin-right:0" *ngIf="!isAuthenticated()">
           <form class="form-inline">
             <mat-form-field>
               <input matInput placeholder="Email address">
@@ -57,12 +57,12 @@
                 <strong>required</strong>
               </mat-error>
             </mat-form-field>
-            <mat-divider></mat-divider>
+            <mat-divider>&nbsp;</mat-divider>
             <mat-form-field>
               <input matInput placeholder="Password">
             </mat-form-field>
             <mat-divider>&nbsp;</mat-divider>        
-              <button mat-raised-button color="primary">Login</button>           
+              <button mat-raised-button color="accent">Login</button>           
           </form>
         </div>   
     </links>

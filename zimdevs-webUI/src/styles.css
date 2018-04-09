@@ -1,10 +1,13 @@
 @import "~@angular/material/prebuilt-themes/indigo-pink.css";
 /* @import '~@angular/material/prebuilt-themes/deeppurple-amber.css'; */
-body {
-  background-image: "assets/images/damask_3.jpg";
+
+.zimdevs-logo{
+  content: url("assets/images/zimdev_logo.png");
+  vertical-align: middle;
 }
 
-.zimdevs-logo {
-  content: url("assets/images/zimdev_logo.png");
+.help-center {
+  display: inline-block;
+  height: 100%;
   vertical-align: middle;
 }
