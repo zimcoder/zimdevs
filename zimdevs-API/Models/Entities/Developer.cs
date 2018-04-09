@@ -1,8 +1,9 @@
 using System;
+using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;
 using System.ComponentModel.DataAnnotations.Schema;
 
-namespace zimdevsapi.Models
+namespace zimdevsapi.Models.Entities
 {
     [Table("Developers")]
     public class Developer : EntityBase
@@ -26,5 +27,7 @@ namespace zimdevsapi.Models
         [Required]
         public DateTime RegistrationDate { get; set; }
         public string ProfilePhotoUrl { get; set; }
+
+        public ICollection<Blog> Blogs { get; set; }
     }
 }

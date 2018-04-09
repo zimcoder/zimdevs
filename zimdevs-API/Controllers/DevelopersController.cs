@@ -1,8 +1,9 @@
-﻿using Microsoft.AspNetCore.Mvc;
-using Microsoft.EntityFrameworkCore;
+﻿using AutoMapper;
+using Microsoft.AspNetCore.Mvc;
 using System.Collections.Generic;
 using System.Threading.Tasks;
-using zimdevsapi.Models;
+using zimdevsapi.Models.DTOs;
+using zimdevsapi.Repositories.Interfaces;
 
 namespace zimdevsapi.Controllers
 {
@@ -10,18 +11,23 @@ namespace zimdevsapi.Controllers
     [Route("api/Developers")]
     public class DevelopersController : Controller
     {
-        public DevelopersController(ZimDevsDbContext context)
+        public DevelopersController(IDeveloperRepository repository, IMapper mapper)
         {
-            Context = context;
+
+            Repository = repository;
+            Mapper = mapper;
         }
 
         [HttpGet]
         public async Task<IActionResult> GetDevelopers()
         {
-            var devs = await Context.Developers.ToListAsync();
-            return Ok(devs);
+
+            var devs = await Repository.GetDevelopers();
+
+            return Ok(Mapper.Map<List<DeveloperDTO>>(devs));
         }
 
-        public ZimDevsDbContext Context { get; }
+        public IDeveloperRepository Repository { get; }
+        public IMapper Mapper { get; }
     }
 }

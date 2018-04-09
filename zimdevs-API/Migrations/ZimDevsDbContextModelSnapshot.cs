@@ -4,7 +4,7 @@ using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Metadata;
 using System;
-using zimdevsapi.Models;
+using zimdevsapi.Repositories;
 
 namespace zimdevsapi.Migrations
 {

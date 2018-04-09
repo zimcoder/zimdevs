@@ -1,12 +1,8 @@
 import { Component, OnInit } from '@angular/core';
-import {
-  AngularFirestore,
-  AngularFirestoreCollection,
-  AngularFirestoreDocument
-} from 'angularfire2/firestore';
 import { Developer } from '../../models/Developer';
 import { Observable } from 'rxjs/Observable';
 import 'rxjs/add/operator/map';
+import { DeveloperService } from '../../services/developer.service';
 
 @Component({
   selector: 'app-developer',
@@ -15,14 +11,14 @@ import 'rxjs/add/operator/map';
 })
 export class DeveloperComponent implements OnInit {
 
-  devCollection: AngularFirestoreCollection<Developer>;
-  devs: Observable<Developer[]>;
 
-  constructor(private afs: AngularFirestore) { }
+  developers:Developer[];
+
+  constructor(private devService: DeveloperService) { }
 
   ngOnInit() {
-    this.devCollection = this.afs.collection('developers');
-    this.devs = this.devCollection.valueChanges();
+    this.devService.getDevelopers().subscribe(developers => this.developers = developers);
+  //  console.log("DEVELOPERS",this.developers);
   }
 
 }

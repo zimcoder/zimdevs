@@ -3,3 +3,8 @@
 body {
   background-image: "assets/images/damask_3.jpg";
 }
+
+.zimdevs-logo {
+  content: url("assets/images/zimdev_logo.png");
+  vertical-align: middle;
+}

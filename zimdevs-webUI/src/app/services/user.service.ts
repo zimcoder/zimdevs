@@ -4,15 +4,18 @@ import { Observable }   from 'rxjs/Observable';
 import 'rxjs/add/operator/map';
 
 import { User } from '../models/User';
+import { BaseService } from './base/base.service';
+import { baseUrl } from '../configurations/baseUrl.config';
 
 @Injectable()
-export class UserService {
+export class UserService extends BaseService {
 
-  private serviceUrl = 'https://jsonplaceholder.typicode.com/users';
-  
-  constructor(private http: HttpClient) { }
+    
+  constructor(protected http: HttpClient) {
+    super(baseUrl.url + "/api/users", http)
+   }
   
   getUser(): Observable<User[]> {
-    return this.http.get<User[]>(this.serviceUrl);
+    return this.http.get<User[]>(this.base);
   }
 }

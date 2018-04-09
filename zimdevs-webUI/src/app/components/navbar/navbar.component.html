@@ -1,52 +1,70 @@
- 
-<header>        
-    <mdb-navbar SideClass="navbar navbar-expand-lg navbar-light bg-white" [containerInside]="true">
-        <logo>
-            <a class="navbar-brand" href="#" >
-              <strong>  <h5 style="color:purple">Zim Developers </h5></strong>
-            </a>
-        </logo>
-        <links>
-            <ul class="navbar-nav" style="padding:0.5em;">
-                <li class="nav-item">
-                    <a class="nav-link waves-light" mdbRippleRadius routerLinkActive="active">Technologies</a>
-                  </li>      
-                  <li class="nav-item">
-                    <a class="nav-link waves-light" mdbRippleRadius routerLinkActive="active">Tutorials</a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link waves-light" mdbRippleRadius routerLink="/blogs" routerLinkActive="active">Blogs</a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link waves-light" mdbRippleRadius routerLink="/developer" routerLinkActive="active">Developers</a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link waves-light" mdbRippleRadius routerLink="/jobs" routerLinkActive="active">Mentorship</a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link waves-light" mdbRippleRadius routerLink="/jobs" routerLinkActive="active">Jobs</a>
-                  </li>
-                  <!-- Dropdown -->
-                  <li class="nav-item dropdown" dropdown>
-                    <a dropdownToggle mdbRippleRadius type="button" class="nav-link dropdown-toggle waves-light" mdbRippleRadius>
-                      About
-                      <span class="caret"></span>
-                    </a>
-                    <div *dropdownMenu class="dropdown-menu dropdown dropdown-primary" role="menu">
-                      <a class="dropdown-item waves-light" mdbRippleRadius href="#">About Zimdevs</a>
-                      <a class="dropdown-item waves-light" mdbRippleRadius href="#">How to get in touch</a>
-                      <a class="dropdown-item waves-light" mdbRippleRadius href="#">About the founder</a>
-                      <div class="divider dropdown-divider"></div>
-                      <a class="dropdown-item waves-light" mdbRippleRadius href="#">Help us grow</a>
-                    </div>
-                  </li>            
-            </ul>
-            <form class="form-inline  waves-light" mdbRippleRadius>
-                <input class="form-control mr-sm-2" type="text" placeholder="Search">
-            </form>
-        </links>
-    </mdb-navbar>   
-</header>    
-
-
-               
+<header>
+  <mdb-navbar SideClass="navbar navbar-expand-lg navbar-light" [containerInside]="true">
+    <links>
+      <ul class="navbar-nav">
+        <a class="navbar-brand" href="/">
+          <span class="zimdevs-logo"></span>
+          <span>
+            <strong style="color:#C80A48">Zim Developers</strong>
+          </span>
+        </a>
+        <li class="nav-item" *ngIf="isAuthenticated()">
+          <a class="nav-link waves-light" mdbRippleRadius routerLinkActive="active">Technologies</a>
+        </li>
+        <li class="nav-item" *ngIf="isAuthenticated()">
+          <a class="nav-link waves-light" mdbRippleRadius routerLinkActive="active">Tutorials</a>
+        </li>
+        <li class="nav-item" *ngIf="isAuthenticated()">
+          <a class="nav-link waves-light" mdbRippleRadius routerLink="/blogs" routerLinkActive="active">Blogs</a>
+        </li>
+        <li class="nav-item" *ngIf="isAuthenticated()">
+          <a class="nav-link waves-light" mdbRippleRadius routerLink="/developer" routerLinkActive="active">Developers</a>
+        </li>
+        <li class="nav-item" *ngIf="isAuthenticated()">
+          <a class="nav-link waves-light" mdbRippleRadius routerLink="/jobs" routerLinkActive="active">Mentorship</a>
+        </li>
+        <li class="nav-item" *ngIf="isAuthenticated()">
+          <a class="nav-link waves-light" mdbRippleRadius routerLink="/jobs" routerLinkActive="active">Jobs</a>
+        </li>
+        <!-- Dropdown -->
+        <li class="nav-item dropdown" dropdown *ngIf="isAuthenticated()">
+          <a dropdownToggle mdbRippleRadius type="button" class="nav-link dropdown-toggle waves-light" mdbRippleRadius>
+            About
+            <span class="caret"></span>
+          </a>
+          <div *dropdownMenu class="dropdown-menu dropdown dropdown-primary" role="menu">
+            <a class="dropdown-item waves-light" mdbRippleRadius href="#">About Zimdevs</a>
+            <a class="dropdown-item waves-light" mdbRippleRadius href="#">How to get in touch</a>
+            <a class="dropdown-item waves-light" mdbRippleRadius href="#">About the founder</a>
+            <div class="divider dropdown-divider"></div>
+            <a class="dropdown-item waves-light" mdbRippleRadius href="#">Help us grow</a>
+          </div>
+        </li>
+      </ul>
+      <!-- <form class="form-inline  waves-light" mdbRippleRadius>
+        <input class="form-control mr-sm-2" type="text" placeholder="Search">
+      </form> -->
+    
+        <div style="margin-left:auto; margin-right:0">
+          <form class="form-inline">
+            <mat-form-field>
+              <input matInput placeholder="Email address">
+              <mat-error *ngIf="emailFormControl.hasError('email') && !emailFormControl.hasError('required')">
+                Please enter a valid email address
+              </mat-error>
+              <mat-error *ngIf="emailFormControl.hasError('required')">
+                Email is
+                <strong>required</strong>
+              </mat-error>
+            </mat-form-field>
+            <mat-divider></mat-divider>
+            <mat-form-field>
+              <input matInput placeholder="Password">
+            </mat-form-field>
+            <mat-divider>&nbsp;</mat-divider>        
+              <button mat-raised-button color="primary">Login</button>           
+          </form>
+        </div>   
+    </links>
+  </mdb-navbar>
+</header>

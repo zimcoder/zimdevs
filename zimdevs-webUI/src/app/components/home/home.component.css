@@ -1,8 +1,9 @@
 .top-banner {
-  margin-top: 0px;
-  /* background-image: url('/assets/images/Harare-featured-image.jpg'); */
-  background-color:blueviolet;
-  height: 400px;
+  margin-top: 0px; 
+  background-image: url('/assets/images/harare.jpg');
+    background-size:cover;
+  background-color: black;
+  height: 500px;
   padding: 2em
 }
 
@@ -11,12 +12,43 @@
   display: flex;
 }
 
-.intro-text{
+.intro-text {
   color: white;
 }
 
-.info-strip{
+.info-strip {
   height: 80px;
-  background-color:purple;
+  background-color:#f3062dc4;
+  vertical-align: middle;
   color: white;
+  border: 1em;
+ border-bottom-color: #007BB5;
+ border-top-color: #007BB5;
+}
+
+.social-media-icon-twitter {
+  background-color: #1DA1F2;
+}
+
+.social-media-icon-linkedin {
+  background-color: #007BB5;
+}
+
+.social-media-icon-google {
+  background-color: #DB4437;
+}
+
+.forum-posts-card {
+  margin-top: 10px;
+}
+
+.devs-list-card {
+  margin-top: 10px;
+  background-color: whitesmoke;
+  border-color: wheat;
+}
+
+.slider-row {
+  margin-top: auto;
+  margin-bottom: auto;
 }
